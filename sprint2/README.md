@@ -1,6 +1,8 @@
 # MyVensim
 
 Projeto da disciplina BCC322 — Engenharia de Software I.
+Gabriel Fuziyama - 23.2.4062
+Vítor de Sousa Costa Lopes - 24.2.4035
 
 Este repositório contém uma implementação inicial de um simulador C++ baseado em Dinâmica de Sistemas.
 
