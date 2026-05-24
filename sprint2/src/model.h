@@ -9,19 +9,19 @@
 class Model
 {
 private:
-    std::vector<System*> systems;
-    std::vector<Flow*> flows;
+    std::vector<System *> systems;
+    std::vector<Flow *> flows;
 
 public:
     Model();
 
-    void add(System* systems);
-    void add(Flow* flow);
+    void add(System *systems);
+    void add(Flow *flow);
 
-    std::vector<System*> getSystem() const;
-    std::vector<Flow*> getFlows() const;
+    std::vector<System *> getSystem() const;
+    std::vector<Flow *> getFlows() const;
 
-    System* getSystem(const std::string& name) const;
+    System *getSystem(const std::string &name) const;
 
     void run(int start, int end, int step);
 };
