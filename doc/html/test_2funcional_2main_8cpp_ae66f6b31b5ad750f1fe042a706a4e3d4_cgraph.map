@@ -1,0 +1,33 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,60,129"/>
+<area shape="rect" id="Node000002" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Executa a validação do ecossistema complexo (Malha cíclica Q) interligando múltiplos sistemas." alt="" coords="118,55,285,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,105,107,89,134,81,136,86,109,94,61,110"/>
+<area shape="rect" id="Node000011" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Executa a homologação do cenário clássico com crescimento exponencial simples." alt="" coords="108,104,295,129"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="60,114,94,114,94,119,60,119"/>
+<area shape="rect" id="Node000012" href="$funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Executa a homologação do cenário logístico com barreira de saturação/capacidade de carga." alt="" coords="117,153,286,179"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="61,123,109,138,140,147,138,152,107,143,59,128"/>
+<area shape="rect" id="Node000003" href="$classModel.html#ae1ca89061ef59c96d457cdd711df7b58" title="Adiciona e registra um estoque (System) ao escopo do modelo." alt="" coords="363,128,457,153"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,78,296,89,344,113,362,121,360,125,342,118,294,94,258,83"/>
+<area shape="rect" id="Node000004" href="$funcional__tests_8cpp.html#a7bb53f0df46c09681f32813375c024e1" title="Função auxiliar estática para comparação de valores em ponto flutuante usando Épsilon." alt="" coords="343,177,477,203"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="275,78,296,89,313,107,322,126,329,145,344,163,353,169,350,173,341,167,325,147,317,128,309,110,293,93,273,82"/>
+<area shape="rect" id="Node000005" href="$classSystem.html#a4101ec619f110368fdcaee0d249c104f" title="Recupera o valor (saldo) atual do estoque." alt="" coords="343,29,477,55"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="284,55,329,49,330,54,285,60"/>
+<area shape="rect" id="Node000006" href="$classModel.html#add1d986de06782723836ea6e07b9e6b6" title="Dispara a simulação temporal iterativa dividida nas fases atômicas de cálculo e atualização." alt="" coords="365,79,455,104"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="285,74,351,82,350,87,284,80"/>
+<area shape="rect" id="Node000007" href="$classSystem.html#a17c4ad1a0e8ca01c368b8841ea2ddf73" title="Incrementa (soma) um montante ao valor atual do estoque." alt="" coords="539,5,675,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="446,76,476,64,524,40,544,32,546,37,526,44,478,68,448,81"/>
+<area shape="rect" id="Node000008" href="$classFlow.html#ae7bd120be33a6da5a7f3c151be38dec5" title="Recupera o endereço de memória do sistema de destino." alt="" coords="541,55,672,80"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="455,83,527,74,528,80,456,89"/>
+<area shape="rect" id="Node000009" href="$classFlow.html#ac4b40112132e76e00fd98c4fba4ca70f" title="Recupera o endereço de memória do sistema de origem." alt="" coords="542,104,671,129"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="456,94,529,104,528,109,455,100"/>
+<area shape="rect" id="Node000010" href="$classSystem.html#a1d90c27b60f84cccc643abdc9fb4a451" title="Decrementa (subtrai) um montante do valor atual do estoque." alt="" coords="525,153,688,179"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="450,102,478,113,526,138,549,147,547,152,524,143,476,118,448,107"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="295,125,349,131,348,136,295,130"/>
+<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="260,127,296,138,344,162,362,170,360,175,342,167,294,143,258,132"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="256,101,294,89,342,64,357,57,360,62,344,68,296,94,257,107"/>
+<area shape="poly" id="edge14_Node000011_Node000006" title=" " alt="" coords="294,103,351,96,351,101,295,108"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="286,153,348,145,349,151,287,158"/>
+<area shape="poly" id="edge17_Node000012_Node000004" title=" " alt="" coords="287,173,330,178,329,183,286,178"/>
+<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="270,151,293,139,309,121,317,103,324,83,341,64,348,59,351,63,344,68,329,86,321,105,313,124,296,143,272,156"/>
+<area shape="poly" id="edge19_Node000012_Node000006" title=" " alt="" coords="256,151,294,138,342,113,357,106,360,111,344,118,296,143,257,156"/>
+</map>

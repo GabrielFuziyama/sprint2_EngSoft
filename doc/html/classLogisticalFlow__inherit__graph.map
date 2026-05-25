@@ -1,0 +1,5 @@
+<map id="LogisticalFlow" name="LogisticalFlow">
+<area shape="rect" id="Node000001" title="Subclasse concreta de Flow para modelagem de crescimento limitado ou saturação logística." alt="" coords="9,456,204,556"/>
+<area shape="rect" id="Node000002" href="$classFlow.html" title="Classe abstrata (Interface) responsável por interligar os estoques (System) e calcular as taxas de va..." alt="" coords="5,5,208,408"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,422,109,456,104,456,104,422"/>
+</map>

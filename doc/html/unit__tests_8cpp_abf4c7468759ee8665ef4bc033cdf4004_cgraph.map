@@ -1,0 +1,9 @@
+<map id="modeloUnitTest" name="modeloUnitTest">
+<area shape="rect" id="Node000001" title="Realiza os testes unitários isolados sobre a inserção e laço de execução do Model." alt="" coords="5,55,129,80"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ae1ca89061ef59c96d457cdd711df7b58" title="Adiciona e registra um estoque (System) ao escopo do modelo." alt="" coords="202,5,297,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,52,188,32,190,37,116,57"/>
+<area shape="rect" id="Node000003" href="$classModel.html#a280b3e3e5db71b8d4e57eae7335e6f0a" title="Recupera o vetor contendo todos os fluxos do modelo." alt="" coords="185,55,314,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,65,171,65,171,70,129,70"/>
+<area shape="rect" id="Node000004" href="$classModel.html#ad7bd5ae49ef57b46af615abe04e0b4bd" title="Recupera o vetor contendo todos os sistemas do modelo." alt="" coords="177,104,321,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,77,189,98,188,103,114,83"/>
+</map>

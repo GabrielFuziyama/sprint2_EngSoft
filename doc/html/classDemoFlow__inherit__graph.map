@@ -1,0 +1,5 @@
+<map id="DemoFlow" name="DemoFlow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,456,212,571"/>
+<area shape="rect" id="Node000002" href="$classFlow.html" title="Classe abstrata (Interface) responsável por interligar os estoques (System) e calcular as taxas de va..." alt="" coords="7,5,210,408"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,422,111,456,106,456,106,422"/>
+</map>

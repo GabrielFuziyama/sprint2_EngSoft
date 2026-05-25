@@ -1,0 +1,24 @@
+<map id="Model" name="Model">
+<area shape="rect" id="Node000001" title="Gerencia e coordena o ciclo de vida dos estoques e fluxos, executando a simulação temporal atômica." alt="" coords="150,1201,357,1460"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="261,1073,435,1139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,1140,317,1187,312,1185,332,1138"/>
+<area shape="rect" id="Node000003" href="$classSystem.html" title="Representa uma unidade de acúmulo de estado (estoque) com um valor contínuo dentro do modelo de simul..." alt="" coords="185,263,378,571"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,570,384,647,404,755,408,840,407,925,407,1035,407,1050,401,1061,396,1059,401,1049,401,1035,401,925,403,840,398,755,379,649,354,572"/>
+<area shape="rect" id="Node000010" href="$classFlow.html" title="Classe abstrata (Interface) responsável por interligar os estoques (System) e calcular as taxas de va..." alt="" coords="5,648,208,1011"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="219,572,192,634,187,632,214,570"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="109,135,187,200"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,199,194,247,189,250,163,202"/>
+<area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="138,201,121,263,109,356,103,452,100,632,95,632,97,452,104,356,116,262,133,200"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="83,5,213,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="151,99,151,134,145,134,145,99"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="252,135,311,200"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="284,200,284,246,279,246,279,200"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="247,797,369,862"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="303,876,299,958,302,1004,312,1048,324,1072,319,1074,307,1050,297,1005,293,958,298,876"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="83,1073,237,1139"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="291,876,222,1012,184,1074,179,1072,218,1009,286,874"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="455,384,478,449"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="458,448,329,782,324,780,453,447"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="176,1138,196,1185,191,1187,171,1140"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="84,1010,96,1048,103,1060,98,1063,91,1050,79,1011"/>
+</map>

@@ -1,0 +1,34 @@
+<map id="src/system.h" name="src/system.h">
+<area shape="rect" id="Node000001" title="Definição da classe System que representa os estoques (Stocks) do simulador." alt="" coords="477,5,583,31"/>
+<area shape="rect" id="Node000002" href="$flow_8h.html" title="Definição da classe abstrata base Flow que gerencia as taxas de transferência." alt="" coords="489,79,571,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="533,44,533,79,527,79,527,44"/>
+<area shape="rect" id="Node000004" href="$model_8h.html" title="Definição do contêiner central Model responsável por reger a simulação iterativa." alt="" coords="315,152,414,177"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="508,42,380,154,376,150,504,38"/>
+<area shape="rect" id="Node000006" href="$mySim_8h.html" title="Arquivo de conveniência que consolida os cabeçalhos essenciais da API do simulador." alt="" coords="75,233,177,258"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="464,37,404,55,342,81,278,120,220,163,139,235,136,231,217,159,275,115,339,76,402,50,463,31"/>
+<area shape="rect" id="Node000009" href="$funcional__tests_8cpp.html" title="Implementação dos testes funcionais e das subclasses concretas de fluxo." alt="" coords="339,225,513,265"/>
+<area shape="poly" id="edge18_Node000001_Node000009" title=" " alt="" coords="474,37,430,54,383,79,339,112,321,131,306,153,302,164,302,174,314,193,337,210,365,223,363,228,334,214,310,197,297,176,296,164,301,151,317,128,336,108,380,74,427,50,472,32"/>
+<area shape="rect" id="Node000010" href="$test_2funcional_2main_8cpp.html" title=" " alt="" coords="537,233,712,258"/>
+<area shape="poly" id="edge19_Node000001_Node000010" title=" " alt="" coords="554,39,586,77,607,112,621,151,627,196,628,232,623,232,622,196,615,153,602,115,581,80,550,42"/>
+<area shape="rect" id="Node000011" href="$unit__tests_8cpp.html" title=" " alt="" coords="737,233,907,258"/>
+<area shape="poly" id="edge20_Node000001_Node000011" title=" " alt="" coords="559,37,613,77,809,231,806,235,610,81,556,41"/>
+<area shape="rect" id="Node000012" href="$system_8cpp.html" title=" " alt="" coords="814,79,934,104"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="597,30,819,76,818,81,596,36"/>
+<area shape="rect" id="Node000003" href="$flow_8cpp.html" title=" " alt="" coords="438,152,537,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="518,117,497,153,492,151,514,114"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="492,112,393,154,391,149,490,107"/>
+<area shape="poly" id="edge11_Node000002_Node000006" title=" " alt="" coords="476,106,394,126,304,154,214,196,146,235,143,230,212,192,302,150,393,121,475,101"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="547,116,556,146,556,163,551,179,539,195,524,208,490,227,487,223,521,204,535,191,546,176,551,162,551,147,542,117"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="558,111,578,129,595,151,615,194,625,232,620,233,610,196,590,153,574,133,555,115"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="565,108,801,230,799,235,563,113"/>
+<area shape="rect" id="Node000005" href="$model_8cpp.html" title=" " alt="" coords="201,233,315,258"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="340,188,275,235,272,230,336,183"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="318,184,162,235,160,230,316,179"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="384,187,413,224,409,227,380,190"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="416,179,588,230,586,235,415,184"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="428,175,724,223,764,230,763,235,723,228,427,180"/>
+<area shape="rect" id="Node000007" href="$src_2main_8cpp.html" title=" " alt="" coords="5,313,111,339"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="109,270,70,315,66,311,105,267"/>
+<area shape="rect" id="Node000008" href="$mySim_8cpp.html" title=" " alt="" coords="135,313,253,339"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="147,267,186,311,182,315,143,270"/>
+</map>

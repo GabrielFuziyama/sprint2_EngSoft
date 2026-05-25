@@ -1,0 +1,11 @@
+<map id="Model::run" name="Model::run">
+<area shape="rect" id="Node000001" title="Dispara a simulação temporal iterativa dividida nas fases atômicas de cálculo e atualização." alt="" coords="5,80,96,105"/>
+<area shape="rect" id="Node000002" href="$classSystem.html#a17c4ad1a0e8ca01c368b8841ea2ddf73" title="Incrementa (soma) um montante ao valor atual do estoque." alt="" coords="157,5,293,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,78,143,40,162,32,164,37,145,44,73,82"/>
+<area shape="rect" id="Node000003" href="$classFlow.html#ae7bd120be33a6da5a7f3c151be38dec5" title="Recupera o endereço de memória do sistema de destino." alt="" coords="160,55,291,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,84,146,76,147,81,97,89"/>
+<area shape="rect" id="Node000004" href="$classFlow.html#ac4b40112132e76e00fd98c4fba4ca70f" title="Recupera o endereço de memória do sistema de origem." alt="" coords="161,104,290,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="97,96,147,103,146,109,96,101"/>
+<area shape="rect" id="Node000005" href="$classSystem.html#a1d90c27b60f84cccc643abdc9fb4a451" title="Decrementa (subtrai) um montante do valor atual do estoque." alt="" coords="144,153,307,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="75,103,145,138,167,147,165,152,143,143,73,108"/>
+</map>

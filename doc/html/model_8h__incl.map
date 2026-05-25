@@ -1,0 +1,14 @@
+<map id="src/model.h" name="src/model.h">
+<area shape="rect" id="Node000001" title="Definição do contêiner central Model responsável por reger a simulação iterativa." alt="" coords="82,5,181,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,68,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,33,65,72,62,68,115,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="155,225,214,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,31,123,95,124,136,134,176,145,197,161,214,157,218,141,200,129,178,119,137,118,95,126,31"/>
+<area shape="rect" id="Node000004" href="$system_8h.html" title="Definição da classe System que representa os estoques (Stocks) do simulador." alt="" coords="143,152,226,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,30,178,138,173,140,133,32"/>
+<area shape="rect" id="Node000005" href="$flow_8h.html" title="Definição da classe abstrata base Flow que gerencia as taxas de transferência." alt="" coords="195,79,255,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="148,29,200,68,197,72,145,33"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="187,178,187,212,182,212,182,178"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="233,103,243,137,244,158,241,178,228,200,212,218,208,214,224,197,235,176,239,158,238,138,227,105"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="220,106,200,141,196,139,216,103"/>
+</map>

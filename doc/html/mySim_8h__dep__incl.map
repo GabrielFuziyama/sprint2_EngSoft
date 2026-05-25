@@ -1,0 +1,7 @@
+<map id="src/mySim.h" name="src/mySim.h">
+<area shape="rect" id="Node000001" title="Arquivo de conveniência que consolida os cabeçalhos essenciais da API do simulador." alt="" coords="75,5,177,31"/>
+<area shape="rect" id="Node000002" href="$src_2main_8cpp.html" title=" " alt="" coords="5,79,111,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,42,71,80,67,77,104,39"/>
+<area shape="rect" id="Node000003" href="$mySim_8cpp.html" title=" " alt="" coords="135,79,253,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,39,185,77,181,80,145,42"/>
+</map>

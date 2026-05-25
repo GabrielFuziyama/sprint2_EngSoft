@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,60,80"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ae1ca89061ef59c96d457cdd711df7b58" title="Adiciona e registra um estoque (System) ao escopo do modelo." alt="" coords="127,5,222,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,56,123,33,125,38,61,61"/>
+<area shape="rect" id="Node000003" href="$classSystem.html#a4101ec619f110368fdcaee0d249c104f" title="Recupera o valor (saldo) atual do estoque." alt="" coords="108,55,241,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,65,94,65,94,70,60,70"/>
+<area shape="rect" id="Node000004" href="$classModel.html#add1d986de06782723836ea6e07b9e6b6" title="Dispara a simulação temporal iterativa dividida nas fases atômicas de cálculo e atualização." alt="" coords="129,104,220,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,74,125,97,123,102,59,79"/>
+<area shape="rect" id="Node000005" href="$classSystem.html#a17c4ad1a0e8ca01c368b8841ea2ddf73" title="Incrementa (soma) um montante ao valor atual do estoque." alt="" coords="303,29,439,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="210,102,240,89,288,64,307,56,309,61,290,68,242,94,212,106"/>
+<area shape="rect" id="Node000006" href="$classFlow.html#ae7bd120be33a6da5a7f3c151be38dec5" title="Recupera o endereço de memória do sistema de destino." alt="" coords="305,79,436,104"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="220,108,291,99,292,104,221,113"/>
+<area shape="rect" id="Node000007" href="$classFlow.html#ac4b40112132e76e00fd98c4fba4ca70f" title="Recupera o endereço de memória do sistema de origem." alt="" coords="306,128,435,153"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="221,120,293,128,292,134,220,125"/>
+<area shape="rect" id="Node000008" href="$classSystem.html#a1d90c27b60f84cccc643abdc9fb4a451" title="Decrementa (subtrai) um montante do valor atual do estoque." alt="" coords="289,177,452,203"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="205,127,290,162,315,171,313,176,288,167,203,132"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,177,60,203"/>
+<area shape="rect" id="Node000002" href="$unit__tests_8cpp.html#abf4c7468759ee8665ef4bc033cdf4004" title="Realiza os testes unitários isolados sobre a inserção e laço de execução do Model." alt="" coords="109,80,233,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,175,140,111,143,116,53,179"/>
+<area shape="rect" id="Node000006" href="$unit__tests_8cpp.html#a2daa5293eefb80820fd0f9bf78e94a49" title="Realiza os testes unitários isolados sobre as operações da classe System." alt="" coords="108,227,235,252"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="61,197,122,219,121,224,59,202"/>
+<area shape="rect" id="Node000003" href="$classModel.html#ae1ca89061ef59c96d457cdd711df7b58" title="Adiciona e registra um estoque (System) ao escopo do modelo." alt="" coords="317,5,411,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="196,78,282,40,303,32,305,37,284,44,199,82"/>
+<area shape="rect" id="Node000004" href="$classModel.html#a280b3e3e5db71b8d4e57eae7335e6f0a" title="Recupera o vetor contendo todos os fluxos do modelo." alt="" coords="299,55,429,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="233,82,285,75,286,80,234,87"/>
+<area shape="rect" id="Node000005" href="$classModel.html#ad7bd5ae49ef57b46af615abe04e0b4bd" title="Recupera o vetor contendo todos os sistemas do modelo." alt="" coords="292,104,436,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="234,98,278,103,278,109,233,103"/>
+<area shape="rect" id="Node000007" href="$classSystem.html#a17c4ad1a0e8ca01c368b8841ea2ddf73" title="Incrementa (soma) um montante ao valor atual do estoque." alt="" coords="296,153,432,179"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="197,224,282,188,303,180,305,185,284,192,200,229"/>
+<area shape="rect" id="Node000008" href="$classSystem.html#aa4ae90d314cf5255cd71db4a2bc812fb" title="Recupera o nome do sistema." alt="" coords="295,203,433,228"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="235,229,281,223,281,228,235,234"/>
+<area shape="rect" id="Node000009" href="$classSystem.html#a4101ec619f110368fdcaee0d249c104f" title="Recupera o valor (saldo) atual do estoque." alt="" coords="297,252,431,277"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="235,245,284,251,283,257,235,250"/>
+<area shape="rect" id="Node000010" href="$classSystem.html#a1d90c27b60f84cccc643abdc9fb4a451" title="Decrementa (subtrai) um montante do valor atual do estoque." alt="" coords="283,301,445,327"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="200,250,284,286,307,294,305,299,282,291,198,255"/>
+<area shape="rect" id="Node000011" href="$classSystem.html#ade77c713b05038012bdd8fe4ef56e3ba" title="Define/sobrescreve diretamente o valor corrente do estoque." alt="" coords="298,351,430,376"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="185,250,226,292,254,315,284,336,300,343,297,348,281,340,251,320,223,296,182,254"/>
+</map>

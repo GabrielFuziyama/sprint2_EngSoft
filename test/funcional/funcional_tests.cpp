@@ -1,3 +1,10 @@
+/**
+ * @file funcional_tests.cpp
+ * @brief Implementação dos testes funcionais e das subclasses concretas de fluxo.
+ * @author Vítor de Sousa Costa Lopes e Gabriel Carneiro Gama Fuziyama
+ * @date 2026
+ */
+
 #include <cassert>
 #include <cmath>
 #include "funcional_tests.h"
@@ -5,33 +12,69 @@
 #include "../../src/system.h"
 #include "../../src/flow.h"
 
+/**
+ * @brief Função auxiliar estática para comparação de valores em ponto flutuante usando Épsilon.
+ * @param valor Valor real calculado pelo simulador.
+ * @param esperado Valor de referência analítica/teórica esperada.
+ * @param erro Margem de tolerância aceitável (Épsilon).
+ * @return true Se a diferença absoluta for menor que a tolerância.
+ * @return false Caso contrário.
+ */
 static bool comparacaoValor(double valor, double esperado, double erro)
 {
     return std::fabs(valor - esperado) < erro;
 }
 
+/**
+ * @class ExponentialFlow
+ * @brief Subclasse concreta de Flow para modelagem de dinâmicas de crescimento ou decaimento exponencial.
+ */
 class ExponentialFlow : public Flow
 {
 public:
+    /**
+     * @brief Construtor da classe ExponentialFlow.
+     * @param source Ponteiro para o estoque de origem.
+     * @param target Ponteiro para o estoque de destino.
+     */
     ExponentialFlow(System *source, System *target)
         : Flow("exponential", source, target)
     {
     }
 
+    /**
+     * @brief Equação matemática do fluxo exponencial.
+     * Retorna 1% do valor acumulado no estoque de origem.
+     * @return double Taxa de variação calculada.
+     */
     double execute()
     {
         return 0.01 * this->getOrigem()->getValor();
     }
 };
 
+/**
+ * @class LogisticalFlow
+ * @brief Subclasse concreta de Flow para modelagem de crescimento limitado ou saturação logística.
+ */
 class LogisticalFlow : public Flow
 {
 public:
+    /**
+     * @brief Construtor da classe LogisticalFlow.
+     * @param source Ponteiro para o estoque de origem.
+     * @param target Ponteiro para o estoque de destino.
+     */
     LogisticalFlow(System *source, System *target)
         : Flow("logistical", source, target)
     {
     }
 
+    /**
+     * @brief Equação matemática do fluxo logístico.
+     * Calcula a taxa baseando-se no estoque de destino e no teto de sustentação igual a 70.0.
+     * @return double Taxa de variação calculada.
+     */
     double execute()
     {
         double p2 = this->getDestino()->getValor();
@@ -39,14 +82,29 @@ public:
     }
 };
 
+/**
+ * @class ComplexFlow
+ * @brief Subclasse concreta de Flow para formação de redes cíclicas e interconexões complexas.
+ */
 class ComplexFlow : public Flow
 {
 public:
+    /**
+     * @brief Construtor da classe ComplexFlow.
+     * @param name Identificador único do fluxo.
+     * @param source Ponteiro para o estoque de origem.
+     * @param target Ponteiro para o estoque de destino.
+     */
     ComplexFlow(const std::string &name, System *source, System *target)
         : Flow(name, source, target)
     {
     }
 
+    /**
+     * @brief Equação matemática do fluxo complexo.
+     * Retorna 1% do valor contido no estoque de origem.
+     * @return double Taxa de variação calculada.
+     */
     double execute()
     {
         return 0.01 * this->getOrigem()->getValor();

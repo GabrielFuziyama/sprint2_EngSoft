@@ -1,0 +1,13 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="Node000001" title="Classe abstrata (Interface) responsável por interligar os estoques (System) e calcular as taxas de va..." alt="" coords="450,5,653,408"/>
+<area shape="rect" id="Node000002" href="$classComplexFlow.html" title="Subclasse concreta de Flow para formação de redes cíclicas e interconexões complexas." alt="" coords="5,456,199,585"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="440,288,195,458,192,454,437,284"/>
+<area shape="rect" id="Node000003" href="$classDemoFlow.html" title=" " alt="" coords="223,463,429,578"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="444,361,369,465,364,462,440,358"/>
+<area shape="rect" id="Node000004" href="$classExponentialFlow.html" title="Subclasse concreta de Flow para modelagem de dinâmicas de crescimento ou decaimento exponencial." alt="" coords="454,471,649,571"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="554,422,554,471,549,471,549,422"/>
+<area shape="rect" id="Node000005" href="$classLogisticalFlow.html" title="Subclasse concreta de Flow para modelagem de crescimento limitado ou saturação logística." alt="" coords="673,471,867,571"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="663,362,738,469,734,472,658,365"/>
+<area shape="rect" id="Node000006" href="$classtesteFlow.html" title=" " alt="" coords="891,471,1099,571"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="666,285,927,468,924,473,663,289"/>
+</map>

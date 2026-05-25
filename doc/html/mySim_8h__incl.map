@@ -1,0 +1,18 @@
+<map id="src/mySim.h" name="src/mySim.h">
+<area shape="rect" id="Node000001" title="Arquivo de conveniência que consolida os cabeçalhos essenciais da API do simulador." alt="" coords="5,5,108,31"/>
+<area shape="rect" id="Node000002" href="$system_8h.html" title="Definição da classe System que representa os estoques (Stocks) do simulador." alt="" coords="59,225,142,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,32,35,59,20,96,12,137,14,157,20,176,39,199,63,217,60,221,35,203,16,179,9,158,7,137,14,94,30,57,46,29"/>
+<area shape="rect" id="Node000004" href="$flow_8h.html" title="Definição da classe abstrata base Flow que gerencia as taxas de transferência." alt="" coords="31,152,91,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="60,31,63,138,57,138,54,31"/>
+<area shape="rect" id="Node000005" href="$model_8h.html" title="Definição do contêiner central Model responsável por reger a simulação iterativa." alt="" coords="94,79,169,104"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="70,29,111,67,107,71,67,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="71,299,130,324"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,251,103,285,98,285,98,251"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="70,176,90,212,85,215,65,179"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="58,178,48,211,46,231,50,250,61,270,77,287,73,291,57,273,45,252,41,231,42,210,53,177"/>
+<area shape="poly" id="edge9_Node000005_Node000002" title=" " alt="" coords="131,105,109,213,103,212,126,104"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="139,103,150,130,160,167,164,210,157,252,144,273,128,291,124,287,140,270,151,250,159,209,155,168,145,132,134,105"/>
+<area shape="poly" id="edge10_Node000005_Node000004" title=" " alt="" coords="122,106,84,144,80,140,118,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="217,152,280,177"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="152,102,219,142,216,147,149,106"/>
+</map>

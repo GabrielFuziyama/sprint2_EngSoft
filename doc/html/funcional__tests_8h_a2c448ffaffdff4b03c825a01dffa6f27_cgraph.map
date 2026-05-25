@@ -1,0 +1,19 @@
+<map id="exponentialFuncionalTest" name="exponentialFuncionalTest">
+<area shape="rect" id="Node000001" title="Executa a homologação do cenário clássico com crescimento exponencial simples." alt="" coords="5,80,192,105"/>
+<area shape="rect" id="Node000002" href="$classModel.html#ae1ca89061ef59c96d457cdd711df7b58" title="Adiciona e registra um estoque (System) ao escopo do modelo." alt="" coords="260,5,355,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,77,257,33,259,38,136,82"/>
+<area shape="rect" id="Node000003" href="$funcional__tests_8cpp.html#a7bb53f0df46c09681f32813375c024e1" title="Função auxiliar estática para comparação de valores em ponto flutuante usando Épsilon." alt="" coords="240,55,375,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,79,226,74,227,80,192,84"/>
+<area shape="rect" id="Node000004" href="$classSystem.html#a4101ec619f110368fdcaee0d249c104f" title="Recupera o valor (saldo) atual do estoque." alt="" coords="241,104,374,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,101,227,105,227,110,192,106"/>
+<area shape="rect" id="Node000005" href="$classModel.html#add1d986de06782723836ea6e07b9e6b6" title="Dispara a simulação temporal iterativa dividida nas fases atômicas de cálculo e atualização." alt="" coords="262,153,353,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="137,103,258,146,257,151,135,108"/>
+<area shape="rect" id="Node000006" href="$classSystem.html#a17c4ad1a0e8ca01c368b8841ea2ddf73" title="Incrementa (soma) um montante ao valor atual do estoque." alt="" coords="436,79,572,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="343,151,374,138,422,113,441,106,443,111,424,118,376,143,345,156"/>
+<area shape="rect" id="Node000007" href="$classFlow.html#ae7bd120be33a6da5a7f3c151be38dec5" title="Recupera o endereço de memória do sistema de destino." alt="" coords="439,128,569,153"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="352,158,425,148,425,153,353,163"/>
+<area shape="rect" id="Node000008" href="$classFlow.html#ac4b40112132e76e00fd98c4fba4ca70f" title="Recupera o endereço de memória do sistema de origem." alt="" coords="439,177,569,203"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="353,169,426,178,425,183,352,174"/>
+<area shape="rect" id="Node000009" href="$classSystem.html#a1d90c27b60f84cccc643abdc9fb4a451" title="Decrementa (subtrai) um montante do valor atual do estoque." alt="" coords="423,227,585,252"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="338,176,424,212,448,220,446,225,422,216,336,181"/>
+</map>

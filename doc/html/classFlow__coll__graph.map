@@ -1,0 +1,12 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="Node000001" title="Classe abstrata (Interface) responsável por interligar os estoques (System) e calcular as taxas de va..." alt="" coords="73,648,275,1011"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="181,135,260,200"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,200,231,224,231,239,227,432,221,516,210,624,209,632,204,631,205,624,216,516,221,432,226,239,226,224,223,200"/>
+<area shape="rect" id="Node000004" href="$classSystem.html" title="Representa uma unidade de acúmulo de estado (estoque) com um valor contínuo dentro do modelo de simul..." alt="" coords="5,263,199,571"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="199,202,184,225,172,249,167,247,180,223,195,199"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="155,5,286,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,99,223,134,218,134,218,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,570,142,631,137,632,126,571"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="73,135,131,200"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="105,200,105,246,99,246,99,200"/>
+</map>

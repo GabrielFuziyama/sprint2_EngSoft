@@ -1,0 +1,17 @@
+<map id="src/model.h" name="src/model.h">
+<area shape="rect" id="Node000001" title="Definição do contêiner central Model responsável por reger a simulação iterativa." alt="" coords="307,5,406,31"/>
+<area shape="rect" id="Node000002" href="$model_8cpp.html" title=" " alt="" coords="5,86,119,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,37,132,81,105,89,103,83,131,76,299,32"/>
+<area shape="rect" id="Node000003" href="$mySim_8h.html" title="Arquivo de conveniência que consolida os cabeçalhos essenciais da API do simulador." alt="" coords="143,86,245,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="322,39,219,88,217,84,320,34"/>
+<area shape="rect" id="Node000006" href="$funcional__tests_8cpp.html" title="Implementação dos testes funcionais e das subclasses concretas de fluxo." alt="" coords="269,79,444,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="359,44,359,79,354,79,354,44"/>
+<area shape="rect" id="Node000007" href="$test_2funcional_2main_8cpp.html" title=" " alt="" coords="468,86,643,111"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="399,33,527,83,525,88,397,38"/>
+<area shape="rect" id="Node000008" href="$unit__tests_8cpp.html" title=" " alt="" coords="667,86,838,111"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="420,29,695,83,694,89,419,34"/>
+<area shape="rect" id="Node000004" href="$src_2main_8cpp.html" title=" " alt="" coords="73,167,179,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,123,138,168,134,165,173,120"/>
+<area shape="rect" id="Node000005" href="$mySim_8cpp.html" title=" " alt="" coords="203,167,321,192"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="215,120,254,165,250,168,211,123"/>
+</map>
