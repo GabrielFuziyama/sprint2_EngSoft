@@ -32,7 +32,12 @@ System *Flow::getSource() const
 {
     return this->origem;
 }
-
+Flow::Flow(const Flow &other)
+{
+    this->name = other.name;
+    this->origem = other.origem;
+    this->destino = other.destino;
+}
 void Flow::setSource(System *origem)
 {
     this->origem = origem;

@@ -1,4 +1,4 @@
-CXX = g++
+CXX = clang++
 CXXFLAGS = -std=c++11 -Wall -Wextra
 
 SRC = src/system.cpp src/flow.cpp src/model.cpp src/mySim.cpp

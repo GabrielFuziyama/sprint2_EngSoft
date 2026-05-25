@@ -7,7 +7,7 @@ class System
 {
 private:
     std::string name;
-    double valor;
+    double value;
 
 public:
     System();

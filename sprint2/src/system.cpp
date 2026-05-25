@@ -3,16 +3,16 @@
 System::System()
 {
     this->name = "";
-    this->valor = 0.0;
+    this->value = 0.0;
 }
 
-System::System(const std::string &name, double valor)
+System::System(const std::string &name, double value)
 {
     this->name = name;
-    this->valor = valor;
+    this->value = value;
 }
 
-std::string System::getName() const
+std::string System::getName()
 {
     return this->name;
 }
@@ -24,20 +24,20 @@ void System::setName(const std::string &name)
 
 double System::getValue() const
 {
-    return this->valor;
+    return this->value;
 }
 
-void System::setValue(double valor)
+void System::setValue(double value)
 {
-    this->valor = valor;
+    this->value = value;
 }
 
-void System::addValue(double valor)
+void System::addValue(double value)
 {
-    this->valor += valor;
+    this->value += value;
 }
 
-void System::removeValue(double valor)
+void System::removeValue(double value)
 {
-    this->valor -= valor;
+    this->value -= value;
 }

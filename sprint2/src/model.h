@@ -15,12 +15,16 @@ private:
 public:
     Model();
 
+  
+    Model(const Model &other);
+    virtual ~Model();
+    Model &operator=(const Model &other);
+
     void add(System *systems);
     void add(Flow *flow);
 
     std::vector<System *> getSystem() const;
     std::vector<Flow *> getFlows() const;
-
     System *getSystem(const std::string &name) const;
 
     void run(int start, int end, int step);

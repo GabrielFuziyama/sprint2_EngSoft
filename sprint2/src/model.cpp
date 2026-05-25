@@ -23,6 +23,11 @@ std::vector<Flow *> Model::getFlows() const
 {
     return this->flows;
 }
+Model::Model(const Model &other)
+{
+    this->systems = other.systems;
+    this->flows = other.flows;
+}
 
 System *Model::getSystem(const std::string &name) const
 {
