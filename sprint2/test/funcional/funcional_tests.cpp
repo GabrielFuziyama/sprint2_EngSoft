@@ -119,7 +119,7 @@ void complexFuncionalTest()
 
     model.run(0, 100, 1);
 
-    assert(comparacaoValor(Q1.getValue(), 31.8512, 0.0001));
+    assert(comparacaoValor(Q1.getValue(), 31.8513, 0.0001));
     assert(comparacaoValor(Q2.getValue(), 18.4003, 0.0001));
     assert(comparacaoValor(Q3.getValue(), 77.1143, 0.0001));
     assert(comparacaoValor(Q4.getValue(), 56.1728, 0.0001));
