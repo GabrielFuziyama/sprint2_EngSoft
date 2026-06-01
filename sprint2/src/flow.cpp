@@ -3,8 +3,8 @@
 Flow::Flow()
 {
     this->name = "";
-    this->origem = 0;
-    this->destino = 0;
+    this->origem = nullptr;
+    this->destino = nullptr;
 }
 
 Flow::Flow(const std::string &name, System *origem, System *destino)
@@ -14,8 +14,29 @@ Flow::Flow(const std::string &name, System *origem, System *destino)
     this->destino = destino;
 }
 
+Flow::Flow(const Flow &other)
+{
+    this->name = other.name;
+    this->origem = other.origem;
+    this->destino = other.destino;
+}
+
 Flow::~Flow()
 {
+}
+
+Flow &Flow::operator=(const Flow &other)
+{
+    if (this == &other)
+    {
+        return *this;
+    }
+
+    this->name = other.name;
+    this->origem = other.origem;
+    this->destino = other.destino;
+
+    return *this;
 }
 
 std::string Flow::getName() const

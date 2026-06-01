@@ -1,36 +1,61 @@
-CXX = g++
+CXX := $(shell if command -v g++ >/dev/null 2>&1; then echo g++; elif command -v clang++ >/dev/null 2>&1; then echo clang++; else echo g++; fi)
 CXXFLAGS = -std=c++11 -Wall -Wextra
 
-SRC = src/system.cpp src/flow.cpp src/model.cpp src/mySim.cpp
+BIN_DIR = bin
 
-PRODUCT = bin/MyVensim.exe
-UNIT_TEST = bin/unitTests.exe
-FUNCTIONAL_TEST = bin/testesRegressivos.exe
+APP_TARGET = $(BIN_DIR)/MyVensim.exe
+FUNCIONAL_TARGET = $(BIN_DIR)/testesRegressivos.exe
+UNIT_TARGET = $(BIN_DIR)/unitTests.exe
 
-all: product unit functional
+SRC_CORE = src/system.cpp src/flow.cpp src/model.cpp src/mySim.cpp
+SRC_APP = src/main.cpp $(SRC_CORE)
+SRC_FUNCIONAL = test/funcional/main.cpp test/funcional/funcional_tests.cpp $(SRC_CORE)
+SRC_UNIT = test/unit/main.cpp test/unit/unit_tests.cpp $(SRC_CORE)
 
-product:
-	$(CXX) $(CXXFLAGS) src/main.cpp $(SRC) -o $(PRODUCT)
+.PHONY: all product tests unit funcional run run-product run-unit run-funcional run-tests run-all clean
 
-unit:
-	$(CXX) $(CXXFLAGS) test/unit/main.cpp test/unit/unit_tests.cpp $(SRC) -o $(UNIT_TEST)
+all: product funcional unit
 
-functional:
-	$(CXX) $(CXXFLAGS) test/funcional/main.cpp test/funcional/funcional_tests.cpp $(SRC) -o $(FUNCTIONAL_TEST)
+product: $(APP_TARGET)
+
+funcional: $(FUNCIONAL_TARGET)
+
+unit: $(UNIT_TARGET)
+
+tests: funcional unit
+
+$(BIN_DIR):
+	mkdir -p $(BIN_DIR)
+
+$(APP_TARGET): $(SRC_APP) | $(BIN_DIR)
+	@echo "Compilador usado: $(CXX)"
+	$(CXX) $(CXXFLAGS) $(SRC_APP) -o $(APP_TARGET)
+
+$(FUNCIONAL_TARGET): $(SRC_FUNCIONAL) | $(BIN_DIR)
+	@echo "Compilando testes funcionais..."
+	$(CXX) $(CXXFLAGS) $(SRC_FUNCIONAL) -o $(FUNCIONAL_TARGET)
+
+$(UNIT_TARGET): $(SRC_UNIT) | $(BIN_DIR)
+	@echo "Compilando testes unitarios..."
+	$(CXX) $(CXXFLAGS) $(SRC_UNIT) -o $(UNIT_TARGET)
+
+run: run-product
 
 run-product: product
-	./$(PRODUCT)
+	./$(APP_TARGET)
+
+run-funcional: funcional
+	./$(FUNCIONAL_TARGET)
 
 run-unit: unit
-	./$(UNIT_TEST)
+	./$(UNIT_TARGET)
 
-run-functional: functional
-	./$(FUNCTIONAL_TEST)
+run-tests: run-funcional run-unit
 
-run-all: all
-	./$(UNIT_TEST)
-	./$(FUNCTIONAL_TEST)
-	./$(PRODUCT)
+run-all: product funcional unit
+	./$(APP_TARGET)
+	./$(FUNCIONAL_TARGET)
+	./$(UNIT_TARGET)
 
 clean:
-	rm -f bin/*.exe bin/*.o bin/*.a bin/*.so bin/*.dll
+	rm -f $(APP_TARGET) $(FUNCIONAL_TARGET) $(UNIT_TARGET)

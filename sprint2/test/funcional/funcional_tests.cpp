@@ -7,9 +7,8 @@
 
 static bool comparacaoValor(double valor, double esperado, double erro)
 {
-    return std::fabs(valor - esperado) < erro;
+    return std::fabs(std::round(valor * 10000) - std::round(esperado * 10000)) < erro;
 }
-
 class ExponentialFlow : public Flow
 {
 public:
@@ -120,9 +119,9 @@ void complexFuncionalTest()
 
     model.run(0, 100, 1);
 
-    assert(comparacaoValor(Q1.getValue(), 31.8512967948, 0.0001));
-    assert(comparacaoValor(Q2.getValue(), 18.4003280886, 0.0001));
-    assert(comparacaoValor(Q3.getValue(), 77.1143180419, 0.0001));
-    assert(comparacaoValor(Q4.getValue(), 56.1728134280, 0.0001));
-    assert(comparacaoValor(Q5.getValue(), 16.4612436467, 0.0001));
+    assert(comparacaoValor(Q1.getValue(), 31.8513, 0.0001));
+    assert(comparacaoValor(Q2.getValue(), 18.4003, 0.0001));
+    assert(comparacaoValor(Q3.getValue(), 77.1143, 0.0001));
+    assert(comparacaoValor(Q4.getValue(), 56.1728, 0.0001));
+    assert(comparacaoValor(Q5.getValue(), 16.4612, 0.0001));
 }

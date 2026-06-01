@@ -1,8 +1,8 @@
 #ifndef MODEL_H
 #define MODEL_H
 
-#include <vector>
 #include <string>
+#include <vector>
 #include "system.h"
 #include "flow.h"
 
@@ -15,12 +15,16 @@ private:
 public:
     Model();
 
-    void add(System *systems);
+    // Forma canonica
+    Model(const Model &other);
+    virtual ~Model();
+    Model &operator=(const Model &other);
+
+    void add(System *system);
     void add(Flow *flow);
 
     std::vector<System *> getSystem() const;
     std::vector<Flow *> getFlows() const;
-
     System *getSystem(const std::string &name) const;
 
     void run(int start, int end, int step);

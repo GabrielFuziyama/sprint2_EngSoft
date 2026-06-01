@@ -4,6 +4,29 @@ Model::Model()
 {
 }
 
+Model::Model(const Model &other)
+{
+    this->systems = other.systems;
+    this->flows = other.flows;
+}
+
+Model::~Model()
+{
+}
+
+Model &Model::operator=(const Model &other)
+{
+    if (this == &other)
+    {
+        return *this;
+    }
+
+    this->systems = other.systems;
+    this->flows = other.flows;
+
+    return *this;
+}
+
 void Model::add(System *system)
 {
     this->systems.push_back(system);
@@ -34,19 +57,17 @@ System *Model::getSystem(const std::string &name) const
         }
     }
 
-    return 0;
+    return nullptr;
 }
 
 void Model::run(int start, int end, int step)
 {
-    if (step <= 0)
+    if (step <= 0 || end <= start)
     {
         return;
     }
 
-    int numberOfSteps = (end - start) / step;
-
-    for (int currentStep = 0; currentStep < numberOfSteps; currentStep++)
+    for (int currentTime = start; currentTime < end; currentTime += step)
     {
         std::vector<double> values;
 
@@ -60,12 +81,12 @@ void Model::run(int start, int end, int step)
             Flow *flow = this->flows[i];
             double value = values[i];
 
-            if (flow->getSource() != 0)
+            if (flow->getSource() != nullptr)
             {
                 flow->getSource()->removeValue(value);
             }
 
-            if (flow->getTarget() != 0)
+            if (flow->getTarget() != nullptr)
             {
                 flow->getTarget()->addValue(value);
             }

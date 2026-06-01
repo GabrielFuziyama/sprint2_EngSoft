@@ -14,7 +14,10 @@ protected:
 public:
     Flow();
     Flow(const std::string &name, System *origem, System *destino);
+
+    Flow(const Flow &other);
     virtual ~Flow();
+    Flow &operator=(const Flow &other);
 
     std::string getName() const;
     void setName(const std::string &name);
