@@ -1,186 +1,82 @@
-/**
- * @file funcional_tests.cpp
- * @brief Implementação dos testes funcionais e das subclasses concretas de fluxo.
- * @author Vítor de Sousa Costa Lopes e Gabriel Carneiro Gama Fuziyama
- * @date 2026
- */
-
-#include <cassert>
-#include <cmath>
 #include "funcional_tests.h"
-#include "../../src/model.h"
-#include "../../src/system.h"
-#include "../../src/flow.h"
+#include "../../src/systemImpl.h"
+#include "../../src/modelImpl.h"
+#include "../../src/exponentialFlow.h"
+#include "../../src/logisticalFlow.h"
+#include "../../src/complexFlow.h"
+#include <iostream>
+#include <assert.h>
+#include <cmath>
 
-/**
- * @brief Função auxiliar estática para comparação de valores em ponto flutuante usando Épsilon.
- * @param valor Valor real calculado pelo simulador.
- * @param esperado Valor de referência analítica/teórica esperada.
- * @param erro Margem de tolerância aceitável (Épsilon).
- * @return true Se a diferença absoluta for menor que a tolerância.
- * @return false Caso contrário.
- */
-static bool comparacaoValor(double valor, double esperado, double erro)
-{
-    return std::fabs(valor - esperado) < erro;
+void exponentialFuncionalTest() {
+    System* pop1 = new SystemImpl("População 1", 100.0);
+    System* pop2 = new SystemImpl("População 2", 0.0);
+    Flow* expFlow = new ExponentialFlow("Fluxo Exponencial", pop1, pop2);
+    Model* m = new ModelImpl("Modelo Exponencial");
+
+    m->add(pop1);
+    m->add(pop2);
+    m->add(expFlow);
+
+    m->run(0, 100, 1);
+
+    assert(std::abs(pop1->getValue() - 36.6032) < 0.0001);
+    assert(std::abs(pop2->getValue() - 63.3968) < 0.0001);
+
+    delete m;
+    delete expFlow;
+    delete pop1;
+    delete pop2;
 }
 
-/**
- * @class ExponentialFlow
- * @brief Subclasse concreta de Flow para modelagem de dinâmicas de crescimento ou decaimento exponencial.
- */
-class ExponentialFlow : public Flow
-{
-public:
-    /**
-     * @brief Construtor da classe ExponentialFlow.
-     * @param source Ponteiro para o estoque de origem.
-     * @param target Ponteiro para o estoque de destino.
-     */
-    ExponentialFlow(System *source, System *target)
-        : Flow("exponential", source, target)
-    {
-    }
+void logisticalFuncionalTest() {
+    System* p1 = new SystemImpl("P1", 100.0);
+    System* p2 = new SystemImpl("P2", 10.0);
+    Flow* logFlow = new LogisticalFlow("Fluxo Logístico", p1, p2);
+    Model* m = new ModelImpl("Modelo Logístico");
 
-    /**
-     * @brief Equação matemática do fluxo exponencial.
-     * Retorna 1% do valor acumulado no estoque de origem.
-     * @return double Taxa de variação calculada.
-     */
-    double execute()
-    {
-        return 0.01 * this->getOrigem()->getValor();
-    }
-};
+    m->add(p1);
+    m->add(p2);
+    m->add(logFlow);
 
-/**
- * @class LogisticalFlow
- * @brief Subclasse concreta de Flow para modelagem de crescimento limitado ou saturação logística.
- */
-class LogisticalFlow : public Flow
-{
-public:
-    /**
-     * @brief Construtor da classe LogisticalFlow.
-     * @param source Ponteiro para o estoque de origem.
-     * @param target Ponteiro para o estoque de destino.
-     */
-    LogisticalFlow(System *source, System *target)
-        : Flow("logistical", source, target)
-    {
-    }
+    m->run(0, 100, 1);
 
-    /**
-     * @brief Equação matemática do fluxo logístico.
-     * Calcula a taxa baseando-se no estoque de destino e no teto de sustentação igual a 70.0.
-     * @return double Taxa de variação calculada.
-     */
-    double execute()
-    {
-        double p2 = this->getDestino()->getValor();
-        return 0.01 * p2 * (1.0 - p2 / 70.0);
-    }
-};
+    assert(std::abs(p1->getValue() - 88.2167) < 0.0001);
+    assert(std::abs(p2->getValue() - 21.7833) < 0.0001);
 
-/**
- * @class ComplexFlow
- * @brief Subclasse concreta de Flow para formação de redes cíclicas e interconexões complexas.
- */
-class ComplexFlow : public Flow
-{
-public:
-    /**
-     * @brief Construtor da classe ComplexFlow.
-     * @param name Identificador único do fluxo.
-     * @param source Ponteiro para o estoque de origem.
-     * @param target Ponteiro para o estoque de destino.
-     */
-    ComplexFlow(const std::string &name, System *source, System *target)
-        : Flow(name, source, target)
-    {
-    }
-
-    /**
-     * @brief Equação matemática do fluxo complexo.
-     * Retorna 1% do valor contido no estoque de origem.
-     * @return double Taxa de variação calculada.
-     */
-    double execute()
-    {
-        return 0.01 * this->getOrigem()->getValor();
-    }
-};
-
-void exponentialFuncionalTest()
-{
-    System pop1("pop1", 100.0);
-    System pop2("pop2", 0.0);
-
-    ExponentialFlow flow(&pop1, &pop2);
-
-    Model model;
-    model.add(&pop1);
-    model.add(&pop2);
-    model.add(&flow);
-
-    model.run(0, 100, 1);
-
-    assert(comparacaoValor(pop1.getValor(), 36.6032341273, 0.0001));
-    assert(comparacaoValor(pop2.getValor(), 63.3967658727, 0.0001));
+    delete m;
+    delete logFlow;
+    delete p1;
+    delete p2;
 }
 
-void logisticalFuncionalTest()
-{
-    System p1("p1", 100.0);
-    System p2("p2", 10.0);
+void complexFuncionalTest() {
+    System* q1 = new SystemImpl("Q1", 100.0);
+    System* q2 = new SystemImpl("Q2", 0.0);
+    System* q3 = new SystemImpl("Q3", 100.0);
+    System* q4 = new SystemImpl("Q4", 0.0);
+    System* q5 = new SystemImpl("Q5", 0.0);
 
-    LogisticalFlow flow(&p1, &p2);
+    Flow* f = new ComplexFlow("f", q1, q2);
+    Flow* g = new ComplexFlow("g", q1, q3);
+    Flow* r = new ComplexFlow("r", q2, q5);
+    Flow* t = new ComplexFlow("t", q2, q3);
+    Flow* u = new ComplexFlow("u", q3, q4);
+    Flow* v = new ComplexFlow("v", q4, q1);
 
-    Model model;
-    model.add(&p1);
-    model.add(&p2);
-    model.add(&flow);
+    Model* m = new ModelImpl("Modelo Complexo");
+    m->add(q1); m->add(q2); m->add(q3); m->add(q4); m->add(q5);
+    m->add(f);  m->add(g);  m->add(r);  m->add(t);  m->add(u);  m->add(v);
 
-    model.run(0, 100, 1);
+    m->run(0, 100, 1);
 
-    assert(comparacaoValor(p1.getValor(), 88.2166603540, 0.0001));
-    assert(comparacaoValor(p2.getValor(), 21.7833396460, 0.0001));
-}
+    assert(std::abs(q1->getValue() - 31.8513) < 0.0001);
+    assert(std::abs(q2->getValue() - 18.4003) < 0.0001);
+    assert(std::abs(q3->getValue() - 77.1143) < 0.0001);
+    assert(std::abs(q4->getValue() - 56.1728) < 0.0001);
+    assert(std::abs(q5->getValue() - 16.4612) < 0.0001);
 
-void complexFuncionalTest()
-{
-    System Q1("Q1", 100.0);
-    System Q2("Q2", 0.0);
-    System Q3("Q3", 100.0);
-    System Q4("Q4", 0.0);
-    System Q5("Q5", 0.0);
-
-    ComplexFlow f("f", &Q1, &Q2);
-    ComplexFlow g("g", &Q1, &Q3);
-    ComplexFlow r("r", &Q2, &Q5);
-    ComplexFlow t("t", &Q2, &Q3);
-    ComplexFlow u("u", &Q3, &Q4);
-    ComplexFlow v("v", &Q4, &Q1);
-
-    Model model;
-    model.add(&Q1);
-    model.add(&Q2);
-    model.add(&Q3);
-    model.add(&Q4);
-    model.add(&Q5);
-
-    model.add(&f);
-    model.add(&g);
-    model.add(&r);
-    model.add(&t);
-    model.add(&u);
-    model.add(&v);
-
-    model.run(0, 100, 1);
-
-    assert(comparacaoValor(Q1.getValor(), 31.8512967948, 0.0001));
-    assert(comparacaoValor(Q2.getValor(), 18.4003280886, 0.0001));
-    assert(comparacaoValor(Q3.getValor(), 77.1143180419, 0.0001));
-    assert(comparacaoValor(Q4.getValor(), 56.1728134280, 0.0001));
-    assert(comparacaoValor(Q5.getValor(), 16.4612436467, 0.0001));
+    delete m;
+    delete f; delete g; delete r; delete t; delete u; delete v;
+    delete q1; delete q2; delete q3; delete q4; delete q5;
 }

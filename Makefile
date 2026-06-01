@@ -1,36 +1,27 @@
-CXX = g++
-CXXFLAGS = -std=c++11 -Wall -Wextra
+CXX      = g++
+CXXFLAGS = -Wall -std=c++11 -Isrc
+BIN_DIR  = bin
 
-SRC = src/system.cpp src/flow.cpp src/model.cpp src/mySim.cpp
+# Puxa dinamicamente apenas as implementações reais do motor e os fluxos
+SRC      = $(filter-out src/main.cpp, $(wildcard src/*Impl.cpp src/*Flow.cpp))
 
-PRODUCT = bin/MyVensim.exe
-UNIT_TEST = bin/unitTests.exe
-FUNCTIONAL_TEST = bin/testesRegressivos.exe
+all: funcional unit
 
-all: product unit functional
-
-product:
-	$(CXX) $(CXXFLAGS) src/main.cpp $(SRC) -o $(PRODUCT)
+funcional:
+	@mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) $(SRC) test/funcional/*.cpp -o $(BIN_DIR)/funcional_tests
 
 unit:
-	$(CXX) $(CXXFLAGS) test/unit/main.cpp test/unit/unit_tests.cpp $(SRC) -o $(UNIT_TEST)
+	@mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) $(SRC) test/unit/*.cpp -o $(BIN_DIR)/unit_tests
 
-functional:
-	$(CXX) $(CXXFLAGS) test/funcional/main.cpp test/funcional/funcional_tests.cpp $(SRC) -o $(FUNCTIONAL_TEST)
-
-run-product: product
-	./$(PRODUCT)
+run-funcional: funcional
+	./$(BIN_DIR)/funcional_tests
 
 run-unit: unit
-	./$(UNIT_TEST)
-
-run-functional: functional
-	./$(FUNCTIONAL_TEST)
-
-run-all: all
-	./$(UNIT_TEST)
-	./$(FUNCTIONAL_TEST)
-	./$(PRODUCT)
+	./$(BIN_DIR)/unit_tests
 
 clean:
-	rm -f bin/*.exe bin/*.o bin/*.a bin/*.so bin/*.dll
+	rm -rf $(BIN_DIR)/*
+
+.PHONY: all funcional unit run-funcional run-unit clean
